@@ -6,8 +6,8 @@ const clearArr = (arr) => {
   arr.length = 0;
   return arr;
 };
-const arr1 = [1, 2, 3, 4, 5];
-console.log(clearArr(arr1))
+// const arr1 = [1, 2, 3, 4, 5];
+// console.log(clearArr(arr1))
 
 const getFirstItem = (array) => {
   return array[0]
@@ -25,10 +25,11 @@ module.exports = {
 // return arr.pop()
 // const arr2 = [];
 // return arr = arr2
-let name = "mike";
-const changeName = (nameToChange) => {
-  nameToChange = "tom";
-  name = "test";
-};
-changeName(name);
-console.log(name);
+const arr1 = [1, 2, 3, 4]
+const arr2 = [5, 6, 7, 8];
+const bigArr1 = [arr1, arr2];
+const bigArr2 = [...bigArr1];
+arr1.push('oh dear');
+
+console.log(bigArr1)
+console.log(bigArr2)
