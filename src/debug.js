@@ -25,3 +25,10 @@ module.exports = {
 // return arr.pop()
 // const arr2 = [];
 // return arr = arr2
+let name = "mike";
+const changeName = (nameToChange) => {
+  nameToChange = "tom";
+  name = "test";
+};
+changeName(name);
+console.log(name);
