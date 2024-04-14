@@ -1,3 +1,4 @@
+/** FEEDBACK: Great use of ternary here! */
 const addToFrontOrBack = (arr, value, isFront) => {
   // let placeHolder = [...arr];
   return isFront === true ? arr.unshift(value) : arr.push(value);
@@ -24,7 +25,7 @@ const deleteFromMiddle = (arr) => {
   // console.log(arr)
 };
 // deleteFromMiddle([1, 2, 3, 4, 5])
-
+/** FEEDBACK: You could have just used bracket notation here instead of .include() */
 const isRightIndex = (arr, value, index) => {
   return arr[index].includes(value);
 };
